@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-uno: #ff7e44; 
+    --color-secundario: #034b5a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Sansita', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+}
+
+p,a,li,label,input {
+    font-family: 'Arya', sans-serif;
+}
+
+header #hero p {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 1000px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header nav {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotos .bajo {
+    border-radius: 20px;
+}
+
+.fotos .guitarra {
+    border-radius: 20px;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: .4s;
+    padding: 5px;
+}
+
+ul li a:hover {
+    color: var(--color-uno);
+    border-bottom: 1px solid var(--color-uno);
+}
+
+ul li:nth-child(6) a {
+    background-color: white;
+    padding: 12px 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+ul li:nth-child(6) a:hover {
+    border: 0;
+    background-color: #ff7e44;
+}
+
+header #hero {
+    width: 100%;
+    background: url(../IMAGENES/rock.jpg);
+    background-size: cover;
+    padding: 10px 0px 490px;
+    opacity: 0.9;
+}
+
+#hero .boton1 {
+    background: #000000;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 400px;
+}
+
+#hero .boton1:hover {
+    border: 0;
+    background-color: #ff7e44;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#hero .boton2 {
+    background: #000000;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#hero .boton2:hover {
+    border: 0px;
+    background-color: #ff7e44;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*ESTILOS MAIN*/
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+main #musicos {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+#musicos .fila article {
+    padding: 40px 50px;
+    text-align: left;
+}
+    
+#musicos .julian {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 4px var(--color-uno);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#musicos .julian:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+#musicos .julian i {
+    color: #ff7e44;
+    font-size: 70px;
+    margin-right: 20px;
+
+}
+    
+#musicos .julian h2 {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    
+}
+ 
+#musicos .julian p {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+#musicos .julian button {
+    background: white;
+    color: black;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+#musicos .diego {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 4px var(--color-uno);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#musicos .diego:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+#musicos .diego i {
+    color: #ff7e44;
+    font-size: 70px;
+    margin-right: 20px;
+}
+    
+#musicos .diego h2 {
+    display: flex;
+    align-items: center;
+    font-size: 47px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    
+}
+ 
+#musicos .diego p {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+#musicos .diego button {
+    background: white;
+    color: black;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+
+#musicos .instrumentos article {
+    box-shadow: 0 0 0 0;
+} 
+
+#musicos .instrumentos h3 {
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#musicos .instrumentos h4 {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+#musicos .instrumentos h3 b {
+    color: #ff7e44;
+}
+
+#musicos .instrumentos p {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+#musicos .instrumentos button {
+    background: white;
+    color: black;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+#musicos .instrumentos button:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+#musicos .fotos {
+    bottom: 50px;
+    left: 200px;
+    align-items:center;
+}
+
+#musicos .guitarra {
+    margin-top: 120px;
+    box-shadow: 8px 6px 6px 2px var(--color-uno);
+}
+
+#musicos .bajo {
+    margin-bottom: -50px;
+    box-shadow: 8px 6px 6px 2px var(--color-uno);
+}
+
+#formatos {
+    background-color: black;
+    color: white;
+    padding: 20px 0 200px;
+    width: 100%;
+    position: relative;
+}
+
+#formatos .posiciones {
+    width: 70%;
+}
+
+#formatos .posiciones h5 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+    
+
+#formatos .posiciones h5 b {
+    color: #ff7e44;
+}
+
+#formatos .posiciones h5 p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#formatos button {
+    background: white;
+    color: black;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#formatos button:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+
+#formatos .fila .tarjetas {
+    padding: 30px;
+    max-width: 240px;
+    box-shadow: 0px 2px 8px var(--color-uno);  
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+
+#formatos .fila .tarjetas:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+#formatos .fila .tarjetas i {
+  font-size: 80px;
+  color: #ff7e44;
+}
+
+#formatos .fila .tarjetas h6 {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#formatos .fila .tarjetas p {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#formatos .fila .tarjetas p b {
+    color: #ff7e44;
+}
+
+#formatos .fila .tarjetas ul li {
+    list-style: circle;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+#tarifas {
+    width: 100%;
+    position: relative;
+    background: url(../IMAGENES/micro.jpg);
+    background-size: cover;
+}
+
+#tarifas .fila .cobros {
+    width: 33%;
+    padding: 800px 55px 55px;
+    color: white;
+    border-right: 1px solid black;
+    background: transparent;
+    transition: .4s;
+    position: relative;
+}
+
+#tarifas .fila .cobros:hover {
+    background: #ffffff40;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+#tarifas .info-cobros h5 {
+    color: var(--color-uno);
+    font-size: 28px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#tarifas .info-cobros i {
+    font-size: 40px;
+}
+
+#tarifas .info-cobros h6 {
+    font-size: 36px;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#tarifas .info-cobros p {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    color: transparent;
+    transition: .4s;
+}
+
+
+#tarifas .cobros button {
+    background: var(--color-uno);
+    color: black;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+#tarifas .cobros button:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+/*Efecto para subir texto al hacer hover*/
+
+#tarifas .cobros .info-cobros {
+    position: absolute;
+    bottom: 50px;
+    transition: .4s;
+}
+
+#tarifas .cobros:hover .info-cobros {
+    bottom: 100px;
+}
+
+#tarifas .cobros:hover p {
+    color: white;
+}
+
+/*Seccion de los comentarios*/
+
+#comentarios {
+    background: #000000;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#comentarios h5 {
+    font-size: 50px;
+    padding: 60px 0 0 0;
+}
+
+#comentarios h5 b {
+    color: #ff7e44;
+}
+
+#comentarios p {
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
+#comentarios .clientes {
+    width: 25%;
+    text-align: center;
+}
+
+#comentarios .clientes i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ff7e44;
+}
+
+#comentarios .clientes h6 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+footer {
+    background: #000000;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+footer b {
+    color: #ff7e44;
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 820px) {
+    nav .fila {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    ul li a {
+        font-size: 16px;
+    }
+    ul li:nth-child(6) a {
+        padding: 8px 16px;
+    }
+    header #hero {
+        padding: 14px 0px 250px;
+    }
+    #hero h1 {
+        font-size: 36px;
+    }
+    #hero .boton1 {
+        padding: 6px 14px;
+        margin-left: 340px;
+        font-size: 15px;
+    }
+    #hero .boton2 {
+        padding: 6px 14px;
+        font-size: 15px;
+    }
+    #musicos .fila article {
+        padding: 10px 20px;
+    }
+    #musicos .julian h2 {
+        font-size: 34px;
+    }
+    #musicos .julian i {
+        font-size: 60px;
+    }
+    #musicos .julian p {
+        margin-bottom: 22px;
+    }
+    #musicos .julian button {
+        padding: 6px 2px;
+    }
+    #musicos .diego h2 {
+        font-size: 34px;
+    }
+    #musicos .diego i {
+        font-size: 60px;
+    }
+    #musicos .diego p {
+        margin-bottom: 22px;
+    }
+    #musicos .diego button {
+        padding: 6px 2px;
+    }
+    #musicos .fila {
+        justify-content: space-evenly;
+    }
+    #musicos .instrumentos h3 {
+        font-size: 40px;
+    }
+    #musicos .instrumentos h4 {
+        font-size: 18px;
+    }
+    #musicos .instrumentos p {
+        font-size: 16px;
+    }
+    #musicos .bajo {
+        margin-bottom: -100px;
+    }
+    #formatos .posiciones h5 {
+        font-size: 36px;
+        text-align: justify;
+    }
+    #formatos .posiciones p {
+        font-size: 16px;
+    }
+    #formatos button {
+        margin-right: 40px;
+    }
+    #formatos .fila .tarjetas {
+        padding: 30px;
+        max-width: 190px;
+    }
+    #tarifas .fila .cobros {
+        padding: 450px 15px 40px;
+    }
+    #tarifas .info-cobros h6 {
+        font-size: 30px;
+    }
+    #comentarios h5 {
+        font-size: 38px;
+    }
+    #comentarios p {
+        font-size: 16px;
+    }
+    #comentarios .clientes h6 {
+        font-size: 26px;
+    }
+    #comentarios .clientes i {
+        font-size: 42px;
+    }
+    #formatos .fila .tarjetas i {
+        font-size: 50px;
+    }
+    #formatos .fila .tarjetas h6 {
+        font-size: 28px;
+    }
+    #formatos .fila .tarjetas p {
+        font-size: 12px;
+    }
+    #musicos .fotos img {
+        width: 200px;
+        height: 200px;
+    }
+    #formatos .fila .tarjetas:hover {
+        transform: scale(1.05);
+    }
+}
+
+/*SMARTPHONE*/
+
+@media screen and (max-width: 520px) {
+    nav ul {
+        justify-content: center;
+        display: block;
+    }
+    nav ul li {
+        margin: 17px 10px;
+    }
+    ul li:nth-child(6) a {
+        padding: 0 4px;
+    }
+    header #hero {
+        padding: 14px 0px 130px;
+    }
+    #hero h1 {
+        font-size: 24px;
+    }
+    #hero .boton1 {
+        padding: 4px 10px;
+        margin-left: 200px;
+        font-size: 12px;
+        margin-bottom: 70px;
+    }
+    #hero .boton2 {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    main #musicos {
+        padding-bottom: 0px;
+    }
+
+    #musicos .fila article {
+        padding: 10px 20px;
+        width: 400px;
+        margin-left: 28px;
+    }
+    #musicos .julian h2 {
+        font-size: 28px;
+        margin-left: 80px;
+    }
+    #musicos .julian i {
+        font-size: 40px;
+    }
+    #musicos .julian p {
+        margin-bottom: 18px;
+        margin-left: 26px;
+    }
+    #musicos .julian button {
+        padding: 6px 2px;
+        margin-left: 160px;
+    }
+    #musicos .diego h2 {
+        font-size: 28px;
+        margin-left: 80px;
+    }
+    #musicos .diego i {
+        font-size: 40px;
+    }
+    #musicos .diego p {
+        margin-bottom: 18px;
+        margin-left: 26px;
+    }
+    #musicos .diego button {
+        padding: 6px 2px;
+        margin-left: 160px;
+    }
+    #musicos .fila {
+        display: block;
+    }
+    #musicos .fila .julian {
+        margin-bottom: 10px;
+    }
+
+    #musicos .instrumentos h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+    #musicos .instrumentos h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+    #musicos .instrumentos p {
+        font-size: 14px;
+        text-align: center;
+    }
+    #musicos .instrumentos button {
+        margin-left: 150px;
+    }
+    #musicos .bajo {
+        margin-bottom: -100px;
+    }
+
+    #musicos .fotos {
+        display: none;
+    }
+    #formatos .fila {
+        display: block;
+    }
+
+    #formatos .posiciones h5 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    #formatos .posiciones p {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    #formatos button {
+       display: none;
+    }
+    #formatos .fila .tarjetas {
+        padding: 30px;
+        max-width: 190px;
+        margin-left: 130px;
+    }
+    #tarifas .fila .cobros {
+        padding: 350px 15px 40px;
+    }
+    #tarifas .info-cobros h6 {
+        font-size: 20px;
+    }
+    #tarifas .info-cobros p {
+        font-size: 12px;
+    }
+
+    #tarifas .info-cobros h5 i {
+        font-size: 20px;
+    }
+    #tarifas .cobros button {
+        padding: 6px 6px;
+        font-size: 12px;
+    }
+
+    #comentarios h5 {
+        font-size: 24px;
+    }
+    #comentarios p {
+        font-size: 12px;
+    }
+    #comentarios .clientes h6 {
+        font-size: 20px;
+    }
+    #comentarios .clientes i {
+        font-size: 36px;
+    }
+    #formatos .fila .tarjetas i {
+        font-size: 50px;
+    }
+    #formatos .fila .tarjetas h6 {
+        font-size: 28px;
+    }
+    #formatos .fila .tarjetas p {
+        font-size: 12px;
+    }
+    #musicos .fotos img {
+        display: none;
+    }
+    #formatos .fila .tarjetas:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        font-size: 12px;
+    }
+    #formatos {
+        padding: 20px 0 100px;
+    }
+}
